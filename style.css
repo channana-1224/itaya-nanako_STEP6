@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 全体の基本設定 */
+body {
+margin: 0;
+padding: 0;
+font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+color: #000000;
+}
+
+/* ヘッダーの設定 */
+header {
+background-color: #f79b9b;
+padding: 30px 40px;
+text-align: center;
+}
+
+header h2, header h1 {
+margin: 0;
+font-size: 24px;
+}
+
+/* 全体を2カラム（横並び）にするコンテナ */
+.container {
+display: flex;
+min-height: calc(100vh - 160px); /* 画面の高さいっぱいに広げる */
+}
+
+/* サイドバーの設定（左側） */
+.sidebar {
+width: 280px;
+background-color: #98ffbb;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.sidebar ul {
+list-style-type: disc;
+padding-left: 20px;
+padding: 0px;
+}
+
+.sidebar ul li {
+margin-left: 20px;  
+margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+text-decoration: none;
+color: #000000;
+font-weight: bold;
+display: list-item;
+}
+
+.sidebar ul li a:hover {
+text-decoration: underline;
+}
+
+/* メインコンテンツの設定（右側） */
+.main-content {
+background-color: #fdf88f;
+flex: 1;
+padding: 30px;
+box-sizing: border-box;
+}
+
+/* テーブルの共通設定（width="100%"を活かす設定） */
+table {
+border-collapse: collapse;
+margin-bottom: 20px;
+width: 100%;
+}
+
+table th, table td {
+padding: 12px;
+border: 3px solid #000000; /* 枠線の太さは3px */
+}
+
+table th {
+background-color: #fdf88f;
+width: 25%;
+text-align: left;
+}
+
+/* 入力欄をテーブル幅いっぱいに広げて綺麗に整える */
+table input[type="text"],
+table input[type="email"],
+table textarea {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+font-size: 16px;
+background-color:#fdf88f;
+}
+
+/* ボタンの調整 */
+input[type="submit"],
+input[type="button"] {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 5px;
+}
+
+/* フッターの設定 */
+footer {
+background-color: #c2c0c0;
+color: #000000;
+padding: 20px;
+text-align: left;
+transition: background-color 0.3s ease;
+}
+
+footer button {
+padding: 8px 15px;
+font-size: 14px;
+cursor: pointer;
+margin-bottom: 10px;
+}
